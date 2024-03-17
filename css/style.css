@@ -1,0 +1,174 @@
+/* Reset all margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    /* Your CSS rules for mobile devices */
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Your CSS rules for tablets */
+}
+
+/* Styles for laptops/desktops */
+@media only screen and (min-width: 1024px) {
+    /* Your CSS rules for laptops/desktops */
+
+    .mainDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .location{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+    .location-inner{
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        padding: 10px 8px;
+        gap: 10px;
+    }
+    .location-icon{
+        height: 15px;
+        width: 13px;
+        margin-top: 7px;
+    }
+    .setLoactionBtn{
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+    nav{
+        padding: 20px 5px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .kfc-logo{
+        height: 40px;
+        width: 80px;
+     } 
+    .navinner{
+        display: flex;
+        width: 80%;
+    }
+    .nav-group-one{
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-weight: 600;
+        width: 50%;
+        display: flex;
+    }
+    .nav-group-two{
+        gap: 20px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        font-weight: 600;
+    }
+
+    .nav-div-one{
+        align-items: center;
+        display: flex;
+        width: 100px;
+        height: 50%;
+        gap: 15px; 
+        border-right: 1px solid gray; 
+    }
+
+    .nav-div-two{
+        align-items: center;
+        display: flex;
+        width: 80px;
+        height: 50%;
+        gap: 10px; 
+    }
+    .heroSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .heroSection-startOrder{
+        padding: 10px 0px;
+        align-items: center;
+        background-color: #202124;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-weight: 700;
+        color: white;
+    }
+    .heroSection-startOrder__two{
+        padding: 10px 30px;
+        background-color: #E4002B;
+        border-radius: 50px;
+    }
+
+    .heroSection-slidShow{
+        height: 450px;
+        width: 100%;
+        background-image: url('../images/slideshow_img/img1.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+
+    }
+    .slideShow-image{
+        width: 100%;
+
+    }
+
+    .sectionOne{
+
+        display: flex;
+        height: 200px;
+        width: 100%;
+
+    }
+    .sectionOne-one{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 100%;
+        width: 40%;
+        padding-right: 20px;
+        font-size: 30px;
+        font-weight: 900;
+        
+
+    }
+    .sectionOne-two{
+        height: 100%;
+        width: 60%;
+
+    }
+    .xyz1{
+        height: 50%;
+        width: 85%;
+        border-bottom: 1px solid lightgray;
+    }
+    .xyz{
+        height: 50%;
+        width: 85%;
+    }
+}
+
+
+
+
+
