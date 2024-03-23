@@ -1,0 +1,570 @@
+/* Reset all margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    /* Your CSS rules for mobile devices */
+}
+
+/* Styles for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Your CSS rules for tablets */
+}
+
+/* Styles for laptops/desktops */
+@media only screen and (min-width: 1024px) {
+    /* Your CSS rules for laptops/desktops */
+
+    .menuMainDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .location{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+    }
+    .location-inner{
+        display: flex;
+        justify-content: baseline;
+        align-items: baseline;
+        padding: 10px 8px;
+        gap: 10px;
+    }
+    .location-icon{
+        height: 15px;
+        width: 13px;
+        margin-top: 7px;
+    }
+    .setLoactionBtn{
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 13px;
+    }
+    nav{
+        padding: 20px 5px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        /* height: 60px; */
+        background-color: rgb(255, 255, 255);
+        z-index: 20;
+        
+
+    }
+    .kfc-logo{
+        height: 40px;
+        width: 80px;
+     } 
+    .navinner{
+        display: flex;
+        width: 80%;
+        /* padding: 5px 0px; */
+    }
+    .nav-group-one{
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-weight: 600;
+        width: 50%;
+        display: flex;
+    }
+    .nav-group-two{
+        gap: 20px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        font-weight: 600;
+    }
+
+    .nav-div-one{
+        align-items: center;
+        display: flex;
+        width: 100px;
+        height: 50%;
+        gap: 15px; 
+        border-right: 1px solid gray; 
+    }
+
+    .nav-div-two{
+        align-items: center;
+        display: flex;
+        width: 80px;
+        height: 50%;
+        gap: 10px; 
+    }
+    .heroSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+    }
+    .heroSection-startOrder{
+        padding: 10px 0px;
+        align-items: center;
+        background-color: #202124;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-weight: 700;
+        color: white;
+    }
+    .heroSection-startOrder__two{
+        padding: 10px 30px;
+        background-color: #E4002B;
+        border-radius: 50px;
+    }
+
+    .heroSection-slidShow{
+        height: 400px;
+        width: 100%;
+        background-image: url('../images/slideshow_img/img1.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+
+    }
+    .slideShow-image{
+        width: 100%;
+
+    }
+
+    .sectionOne{
+
+        display: flex;
+        height: 200px;
+        width: 100%;
+
+    }
+    .sectionOne-one{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 100%;
+        width: 40%;
+        padding-right: 20px;
+        font-size: 30px;
+        font-weight: 900;
+        
+
+    }
+    .sectionOne-two{
+        height: 100%;
+        width: 60%;
+
+    }
+    .xyz1{
+        height: 50%;
+        width: 85%;
+        border-bottom: 1px solid lightgray;
+    }
+    .xyz{
+        height: 50%;
+        width: 85%;
+    }
+
+    .menu{
+        display: flex;
+        width: 100%;
+        padding-bottom: 80px;
+    }
+    .menuOne{
+        display: flex;
+        width: 18%;
+    }
+
+    .menuTwo{
+        display: flex;
+        width: 74%;
+    }   
+    .menuThree{
+        display: flex;
+        width: 8%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        grid-template-rows: repeat(2, 1fr); /* 2 rows */
+        gap: 22px; /* gap between grid items */
+        width: 100%;
+        padding: 20px 20px;
+      }
+      
+      .grid-item {
+        background-color: #F8F7F5;
+        text-align: center;
+        height: 250px;
+        
+      }
+      .cardA1{
+        height: 80%;
+      }
+      .cardA2{
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 900;
+      }
+      .periPhoto{
+        width: 100%;
+        height: 100%;
+      }
+      .lastimg{
+        width: 80%;
+        height: 80%;
+        margin-top: 30px;
+      }
+ 
+      .abc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .blackDiv{
+        background-color: #202124;
+        width: 100%;
+        height: 500px;
+      }
+      
+      .innerDiv{
+        background-color: #f9f8f8;
+        padding: 20px 5px;
+        display: flex;
+        width: 80%;
+        justify-content: center;
+      }
+      .blackSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #202124;
+      }
+      .innerBlack{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+      }
+      .strip{
+        display: flex;
+        justify-content: left;
+        align-items: start;
+        width: 100%;
+
+      }
+      .offerDeals{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+        padding: 40px 5px;
+
+      }
+      .offer1{
+        display: flex;
+        font-weight: 700;
+        font-size: 28px;
+        color: white;
+      }
+
+      .offer2{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 15px; 
+        color: white; 
+              
+
+      }
+      .slideDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* background-color: crimson */
+      }
+
+        .whitespace{
+        display: flex;
+        width: 5%;
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow; */
+
+        }
+        .slides{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        /* background-color: green */
+
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: #202124;
+            padding-bottom: 100px;
+             
+        }
+        .blankSpace{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 120px;
+            background-color: #202124 ;
+        }
+
+        .footerLinks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            background-color: #202124;
+            padding-top: 5px;
+            position: relative;
+        }
+        .footimage{
+            display: flex;
+            /* justify-content: start;
+            align-items: start; */
+            padding: 0 20px;
+            position: absolute;
+            width: 12%;
+            top: 5px;
+            left: 0;
+            background-color: #202124;
+        }
+        .flinks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48%;
+            margin-left: 12%;
+            background-color:#202124;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+        }
+        .findKfc{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            width: 15%;
+            background-color: #202124;
+            height: 150px;
+            gap: 5px;
+            
+
+        }
+        .findKfc > p{
+            color: white;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+        .download{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            
+            width: 25%;
+            background-color: #202124;
+            height: 150px;
+            gap: 20px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        ul li{
+            padding: 5px;
+        }
+
+        ul li a {
+           
+            color: lightgray;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        ul li a:hover{
+            color: white;
+        }
+        .copyRight{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #202124;
+            color: lightgray;
+            width: 100%;
+            padding: 20px 0px;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+
+        }
+        .circle1{
+            width: 30px; 
+            height: 30px;
+            background-image:url("../images/svgIcons/Instagram.svg");
+            border-radius: 50%;
+            position: absolute;
+            right: 170px;
+            background-size: cover;
+
+
+        }
+        .circle2{
+            width: 30px; 
+            height: 30px;
+            background-image:url("../images/svgIcons/Facebook.svg");
+            border-radius: 50%;
+            position: absolute;
+            right: 135px;
+            background-size: cover;
+
+
+        }
+        .circle3{
+            width: 30px; 
+            height: 30px;
+            background-image:url("../images/svgIcons/Twitter.svg");
+            border-radius: 50%;
+            position: absolute;
+            right: 100px;
+            background-size: cover;
+
+
+        }
+        .middleDiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: lime; */
+            width: 100%;
+            background-color: pink;
+            height: 400px;
+            overflow-y: scroll;
+                
+ 
+           
+           
+        }
+        .middleInnerDiv {
+            /* position: relative; */
+            display: flex;
+            justify-content: center;
+            background-color: gray;
+            width: 70%;
+                height: 100%;
+         }
+        
+        
+.side-bar {
+   
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width:20%;
+    height: 100%;
+  }
+  .navigation{
+    width: 100%;
+    border-color: rebeccapurple;
+  }
+  .navigation ul {
+    padding: 0;
+  }
+  
+  .navigation li {
+    list-style: none;
+  }
+  
+  .navigation li a {
+    text-decoration: none;
+    color: lime;
+    display: block;
+    padding: 0.6rem 0.3rem;
+    font-weight: 400;
+    transition: all ease-out 250ms;
+  }
+  
+  .navigation li a:hover {
+    /* color: lime; */
+  }
+  
+  .main-content {
+    /* margin-left: 160px; */
+    width: 80%;
+    background-color: green;
+    height: 100%;
+    overflow-y: scroll;
+
+  }
+  
+  section {
+    background-color: #f2f2f2;
+    height: 90vh;
+    margin:0;
+    padding:2.5rem 4rem;
+    
+  }
+  
+  section:nth-of-type(2n) {
+    background-color: #ccc;
+  }
+  
+  section:last-of-type {
+    height: 100vh;
+  }
+  
+  h1 {
+    color: #444;
+    font-weight: 600;
+  }
+  
+  .active {
+    color: lime; 
+    font-weight: 600;
+    margin-top: 100px;
+  }
+
+}
