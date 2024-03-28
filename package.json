@@ -1,5 +1,23 @@
 {
+  "name": "json-server-example",
+  "version": "1.0.0",
+  "description": "Example Node.js project using json-server",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "keywords": [
+    "json-server",
+    "node",
+    "example"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "json-server": "^1.0.0-alpha.23"
   }
 }
+
+
+
+
