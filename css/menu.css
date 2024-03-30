@@ -481,7 +481,7 @@ body::-webkit-scrollbar {
             align-items: center;
             /* background-color: lime; */
             width: 100%;
-            background-color: pink;
+            /* background-color: pink; */
             height:70vh;
             overflow-y: scroll;
        
@@ -493,7 +493,7 @@ body::-webkit-scrollbar {
             /* position: relative; */
             display: flex;
             justify-content: center;
-            background-color: gray;
+            /* background-color: gray; */
             width: 80%;
             height: 100%;
          }
@@ -511,7 +511,7 @@ body::-webkit-scrollbar {
   }
   .navigation{
     width: 100%;
-    border-color: rebeccapurple;
+    /* border-color: rebeccapurple; */
   }
   .navigation ul {
     padding: 0;
@@ -523,7 +523,7 @@ body::-webkit-scrollbar {
   
   .navigation li a {
     text-decoration: none;
-    color: lime;
+    color: #494949;
     display: block;
     padding: 0.6rem 0.3rem;
     font-weight: 400;
@@ -531,13 +531,13 @@ body::-webkit-scrollbar {
   }
   
   .navigation li a:hover {
-    /* color: lime; */
+    color:black;
   }
   
   .main-content {
     /* margin-left: 160px; */
     width: 90%;
-    background-color: green;
+    /* background-color: green; */
     height: 100%;
     overflow-y: scroll;
 
@@ -548,15 +548,25 @@ body::-webkit-scrollbar {
   }
   
   section {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     /* height: 90vh; */
     margin:0;
     padding:1rem 1rem;
     
   }
+  .kfcMenuFont{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 10px ;
+
+  }
   
   section:nth-of-type(2n) {
-    background-color: #ccc;
+    /* background-color: #ccc; */
   }
   
   section:last-of-type {
@@ -564,12 +574,12 @@ body::-webkit-scrollbar {
   }
   
   h1 {
-    color: #444;
+    /* color: #444; */
     font-weight: 600;
   }
   
   .active {
-    color: lime; 
+    color: black; 
     font-weight: 600;
     margin-top: 100px;
   }
