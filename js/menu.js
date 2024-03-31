@@ -5,7 +5,6 @@ let FooterLinks;
 // js for menu page started here
 // Get all sections that have an ID defined
 const sections = document.querySelectorAll("section[id]");
-// console.log(sections);
 
 // Add an event listener listening for scroll
 window.addEventListener("scroll", navHighlighter);
@@ -14,14 +13,11 @@ function navHighlighter() {
   
   // Get current scroll position
   let scrollY =  window.scrollY;
-  // console.log("ones",scrollY);
   
   // Now we loop through sections to get height, top and ID values for each
   sections.forEach(current => {
-    // console.log("two",current.offsetHeight);
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 10;
-    // console.log(sectionTop);
     sectionId = current.getAttribute("id");
 
     
@@ -78,14 +74,11 @@ function showLink(z){
 }
 
 function addToCart(dataArray, elementId){
-  console.log(dataArray,elementId);
 }
 
 function displayMenu(menuId, menuData){
-  console.log(menuId,menuData);
   if(menuData.length>0){
      let parentMenu = document.getElementById(`${menuId}`);
-     console.log(parentMenu);
 
     menuData.map((element)=>{
 
@@ -132,7 +125,6 @@ function displayMenu(menuId, menuData){
       const descriptionDiv = document.createElement('div');
       descriptionDiv.classList.add('description');
       const descriptionParagraph = document.createElement('p');
-      console.log(element.mealContent);
       descriptionParagraph.textContent = element.mealContent?element.mealContent:element.offerDetails;
       descriptionDiv.appendChild(descriptionParagraph);
 
@@ -183,7 +175,6 @@ function displayMenu(menuId, menuData){
 }
 
 const getMenuData = async () => {
-  console.log("hi");
   try {
       const response = await fetch("https://customapis.onrender.com/api/v1/getKfcMenuDetails");
       const data = await response.json();
@@ -195,7 +186,6 @@ const getMenuData = async () => {
       
       FooterLinks = data.message[0].kfcMenuDetails.footerLinks;
       showLink(FooterLinks);
-      console.log(data.message[0].kfcMenuDetails.periPeriChicken);
 
 
       displayMenu("periPeriChicken",data.message[0].kfcMenuDetails.periPeriChicken);
@@ -210,7 +200,6 @@ const getMenuData = async () => {
 
 
   } catch (error) {
-      console.log('Error fetching data:',error);
   }
 }     
 

@@ -3,7 +3,6 @@ let allFooterLinks;
 let homePageMenuDetails;
 
 function showMenu(p){
-    // console.log("from show",p);
     p.map((element)=>{
         if(element.id!==8){
             
@@ -101,44 +100,36 @@ function showMenu(p){
     }
 
     const getHomePageData = async () => {
-        console.log("hi");
         try {
             const response = await fetch("https://customapis.onrender.com/api/v1/getKfcHomePageData");
             const data = await response.json();
             // allHomePageMenu = data;
             // showMenu(allHomePageMenu);
-            console.log(data); 
             homePageMenuDetails = data.message[0].kfcHomePage.homePageFoodItems;
             showMenu(homePageMenuDetails);
             
             allFooterLinks = data.message[0].kfcHomePage.footerLinks;
             showLink(allFooterLinks);
         } catch (error) {
-            console.log('Error fetching data:',error);
         }
     }     
 
 
 
 // const getMenuDeatails = async () => {
-//     console.log("hi");
 //     try {
 //         const response = await fetch("http://localhost:3000/homePageFoodItems");
 //         const data = await response.json();
 //         allHomePageMenu = data;
 //         showMenu(allHomePageMenu);
-//         // console.log(data); 
 //     } catch (error) {
-//         console.log('Error fetching data:',error);
 //     }
 // }
 
 // const getFooterLinks = async () => {
 //     try {
-//         console.log("hi2");
 //         const response = await fetch("http://localhost:3000/footerLinks");
 //         const data = await response.json();
-//         console.log(data);
 //         allFooterLinks = data;
 //         showLink(allFooterLinks);
 
@@ -146,7 +137,6 @@ function showMenu(p){
 
 
 //     } catch (error) {
-//         console.log('Error fetching data:',error);
         
 //     }
 // }
@@ -155,7 +145,6 @@ function showMenu(p){
 
 window.onload = function(){
 
-    // console.log("one");
     // Fetch all the menu details from API 
     // getMenuDeatails();
 
